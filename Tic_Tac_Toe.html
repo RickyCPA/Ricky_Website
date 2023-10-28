@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tic Tac Toe Game</title>
+        
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <!-- font awesome kit -->
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+        
+    </head>
+<!-- assign ricky-site class to have full screen background-->
+    <body class = "ricky-site">
+    <div id = "ticTacBck" class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Ricky's Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="Tic_Tac_Toe.html">Tic Tac Toe Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="calculator_web_interface.html">Ugly Calculator</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col align-self-center" id = "intro-box">
+                    <h2 id = "intro-text">Welcome to Tic Tac Toe!</h2>
+                    <p class = "intro-para">This is a simple game for two players, pick your shape (x or o) and click when it is your turn.</p>
+                    <p class = "intro-para">First to get three in a row wins!</p>
+                    <button id = "reset" type = "button" class = "btn btn-light">Restart</button>
+                </div>
+            </div>
+        </div>
+        <table id = "ticTacTable">
+            <tr>
+                <td class = "ticTac"></td>
+                <td class = "ticTac"></td>
+                <td class = "ticTac"></td>
+            </tr>
+            <tr>
+                <td class = "ticTac"></td>
+                <td class = "ticTac"></td>
+                <td class = "ticTac"></td>
+            </tr>
+            <tr>
+                <td class = "ticTac"></td>
+                <td class = "ticTac"></td>
+                <td class = "ticTac"></td>
+            </tr>
+        </table>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="Tic_Tac_Toe_JS.js" async defer></script>
+    </body>
+</html>

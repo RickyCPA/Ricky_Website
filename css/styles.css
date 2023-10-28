@@ -1,0 +1,142 @@
+/* Color Palette: 222831 - main
+393E46 - second
+00ADB5 - third
+EEEEEE - fourth */
+
+.navbar{
+  border-bottom: .1rem solid;
+}
+
+.row{
+  margin:0;
+}
+
+h1{
+  color: #EEEEEE;
+  font-family: montserrat-thin;
+  font-size: 4rem;
+}
+
+.introduction-section{
+  background-color: #222831;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.headshot{
+  width: 30rem;
+  border-radius: 100%;
+  margin: 4rem 0 2rem 0;
+}
+
+p{
+  color: #EEEEEE;
+  font-family: ubuntu;
+  font-size: 1.5rem;
+}
+
+.introduction-para{
+  margin: 1rem 0 10rem 0;
+}
+
+.personal-bio{
+  background-color: #393E46;
+  text-align: center;
+  padding: 10rem 1rem 5rem 0;
+}
+
+.bio-img{
+  width: 30rem;
+  border-radius: 20%;
+}
+
+.about-me-title{
+font-size: 2rem;
+padding: 4rem 0 0 0;
+}
+
+.about-me-body{
+  font-size: 1.2rem;
+}
+
+.technology-tools{
+  background-color: #393E46;
+  text-align: center;
+  padding: 10rem 0 0 0;
+  margin: 0;
+}
+
+.technology-header{
+  font-size: 3rem;
+  padding: 0 0 2rem 0;
+}
+
+.technology-row{
+  padding: 0 0 3rem 0;
+  margin: 0;
+}
+
+.technology-icon{
+  color: #00ADB5;
+  margin: 4rem 0 0 0;
+}
+
+h3{
+  color: #EEEEEE;
+  font-family: montserrat-thin;
+  margin: 1.5rem 0 0 0;
+}
+
+.technology-desc{
+  margin: 1rem 1rem 0 1rem;
+  font-size: 1.2rem;
+}
+
+.calculator{
+  min-height:100%;
+  background-color: #222831;
+  text-align: center;
+}
+
+.ricky-site{
+  background-color: #222831;
+}
+
+.ticTac{
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  /*padding: 100px;*/
+  border: 5px solid white;
+  font-size: 100px;
+  color: white;
+}
+
+.intro-para{
+  font-size: 1.5rem;
+}
+
+#ticTacTable{
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#intro-text{
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+
+#intro-box{
+  margin-top: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+#ticTacBck{
+  min-height:100%;
+  background-color: #222831;
+  text-align: center;
+}
