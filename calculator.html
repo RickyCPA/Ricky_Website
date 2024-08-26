@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Tic Tac Toe Game</title>
-        
+        <title>Ricky's Personal Site</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
         <!-- Bootstrap CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        
+      
         <!-- Bootstrap JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/styles.css">
-        
+      
         <!-- font awesome kit -->
-        
+      
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+      
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
-        
+
     </head>
-<!-- assign ricky-site class to have full screen background-->
-    <body class = "ricky-site">
-    <div id = "ticTacBck" class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+    <body class="ricky-site">
+        <!-- Introduction Section -->
+        <div class="container-fluid introduction-section">
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Ricky's Site</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,36 +59,39 @@
                 </ul>
                 </div>
             </div>
-        </nav>
-        <div class = "container">
-            <div class = "row">
-                <div class = "col align-self-center" id = "intro-box">
-                    <h2 id = "intro-text">Welcome to Tic Tac Toe!</h2>
-                    <p class = "intro-para">This is a simple game for two players, pick your shape (x or o) and click when it is your turn.</p>
-                    <p class = "intro-para">First to get three in a row wins!</p>
-                    <button id = "reset" type = "button" class = "btn btn-light">Restart</button>
+            </nav>
+        
+        <h1 id="heading">Calculator</h1>
+        <div>
+            <script src="calculator.js" async defer></script>
+            <form id = "calculator">
+                <div id="heading-output">
+                    <h2 id="total"></h2> <br>
                 </div>
-            </div>
+                <div class="calc-box">
+                    <button id="seven" class = "number" >7</button>
+                    <button id="eight" class = "number" >8</button>
+                    <button id="nine" class = "number" >9</button>
+                    <button id="division" class = "operator" value="/">/</button>
+                </div>
+                <div class="calc-box">
+                    <button id="four" class = "number" >4</button>
+                    <button id="five" class = "number" >5</button>
+                    <button id="six" class = "number" >6</button>
+                    <button id="multiplication" class = "operator" value="*">*</button>
+                </div>
+                <div class="calc-box">
+                    <button id="one" class = "number" >1</button>
+                    <button id="two" class = "number" >2</button>
+                    <button id="three" class = "number" >3</button>
+                    <button id="addition" class = "operator" value="+">+</button>
+                </div>
+                <div class="calc-box">
+                    <button id="clear">C</button>
+                    <button id="zero" class = "number" >0</button>
+                    <button id="equals">=</button> 
+                </div>           
+            </form>
         </div>
-        <table id = "ticTacTable">
-            <tr>
-                <td class = "ticTac"></td>
-                <td class = "ticTac"></td>
-                <td class = "ticTac"></td>
-            </tr>
-            <tr>
-                <td class = "ticTac"></td>
-                <td class = "ticTac"></td>
-                <td class = "ticTac"></td>
-            </tr>
-            <tr>
-                <td class = "ticTac"></td>
-                <td class = "ticTac"></td>
-                <td class = "ticTac"></td>
-            </tr>
-        </table>
-    </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="Tic_Tac_Toe_JS.js" async defer></script>
     </body>
 </html>
