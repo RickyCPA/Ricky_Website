@@ -3,6 +3,7 @@
 00ADB5 - third
 EEEEEE - fourth */
 
+/*overall styling*/
 .navbar{
   border-bottom: .1rem solid;
 }
@@ -11,12 +12,43 @@ EEEEEE - fourth */
   margin:0;
 }
 
+.ricky-site{
+  background-color: #222831;
+}
+
+.intro-para{
+  font-size: 1.5rem;
+}
+
+.devborder{
+  border: 2px solid red;
+}
+
 h1{
   color: #EEEEEE;
   font-family: montserrat-thin;
   font-size: 4rem;
 }
 
+h2,  h3{
+  color: #EEEEEE;
+  font-family: montserrat-thin;
+  margin: 1.5rem 0 0 0;
+}
+
+p{
+  color: #EEEEEE;
+  font-family: ubuntu;
+  font-size: 1.5rem;
+}
+
+button{
+  border:none;
+  outline:none;
+  padding:0;
+}
+
+/* index styling*/
 .introduction-section{
   background-color: #222831;
   text-align: center;
@@ -29,11 +61,6 @@ h1{
   margin: 4rem 0 2rem 0;
 }
 
-p{
-  color: #EEEEEE;
-  font-family: ubuntu;
-  font-size: 1.5rem;
-}
 
 .introduction-para{
   margin: 1rem 0 10rem 0;
@@ -59,6 +86,8 @@ padding: 4rem 0 0 0;
   font-size: 1.2rem;
 }
 
+/*portfolio styling*/
+
 .technology-tools{
   background-color: #393E46;
   text-align: center;
@@ -81,26 +110,13 @@ padding: 4rem 0 0 0;
   margin: 4rem 0 0 0;
 }
 
-h3{
-  color: #EEEEEE;
-  font-family: montserrat-thin;
-  margin: 1.5rem 0 0 0;
-}
 
 .technology-desc{
   margin: 1rem 1rem 0 1rem;
   font-size: 1.2rem;
 }
 
-.calculator{
-  min-height:100%;
-  background-color: #222831;
-  text-align: center;
-}
-
-.ricky-site{
-  background-color: #222831;
-}
+/*tic tac toe game styling*/
 
 .ticTac{
   display: inline-block;
@@ -111,10 +127,6 @@ h3{
   border: 5px solid white;
   font-size: 100px;
   color: white;
-}
-
-.intro-para{
-  font-size: 1.5rem;
 }
 
 #ticTacTable{
@@ -139,4 +151,40 @@ h3{
   min-height:100%;
   background-color: #222831;
   text-align: center;
+}
+
+/*calculator styling*/
+
+.calc-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc-box button{
+  width: 20%;
+  height: 10vh;
+  min-width: 70px;
+  max-width: 100px;
+  min-height: 60px;
+  margin: .25vh;
+  background-color:#00ADB5;
+  color: #EEEEEE;
+}
+
+#calculator{
+  display:inline-block;
+  border: 2px solid #00ADB5;
+  width: 40%;
+  min-width: 380px;
+  padding: 1vh;
+}
+
+#heading-output{
+  display:inline-block;
+  width:75%;
+  min-width: 305px;
+  max-width:420px;
+  border: 2px solid #EEEEEE;
+  margin: .5vh;
 }
